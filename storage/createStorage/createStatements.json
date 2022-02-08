@@ -1,0 +1,28 @@
+{
+    "host":"localhost",
+    "port":3306,
+    "admin":"parada",
+    "adminpassword":"secret",
+    "user":"oliver",
+    "userpassword":"secret",
+    "dropUser":true,
+    "debug":true,
+    "database":"computerdb",
+    "tables":[
+        {
+            "tableName":"computer",
+            "columns":[
+                "id integer not null primary key",
+                "name varchar(20) not null",
+                "type varchar(28) not null",
+                "processor varchar(17) not null",
+                "amount integer not null"
+            ],
+            "data":[
+                [1, "Beast II", "server", "pentium II", 100],
+                [2, "Cera 765", "desktop", "AMD 760", 20],
+                [3, "Asus", "laptop", "NVIDIA", 18]
+            ]
+        }
+    ]
+}
